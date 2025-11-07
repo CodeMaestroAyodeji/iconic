@@ -1,0 +1,364 @@
+/* Section 1: Hero Section */
+.about-hero-section {
+  position: relative;
+  height: 85vh;
+  background-image: url('pictures/real-estate1.jpg'); /* Placeholder image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.about-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.about-hero-section h1 {
+  position: relative;
+  z-index: 1;
+  font-family: "Mulish", Sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: #ffffff;
+  text-align: left !important;
+  letter-spacing: 2px;
+  padding: 0 0 20px 20px;
+
+}
+
+/* Sticky Download Brochure Button */
+.download-brochure-btn {
+  position: fixed;
+  top: 93%; /* Adjust as needed */
+  transform: translateY(-50%);
+  right: 20px; /* Adjust as needed */
+  background-color: #FFFFFF;
+  border-style: solid;
+  color:#FE0000; /* Crimson red text */
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: normal;
+  border-color: #FE0000;
+  border-radius: 5px;
+  border-width: 1px 1px 1px 1px;
+  z-index: 1001; /* Ensure it's above other content */
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+  display: block; /* Initially hidden */
+  font-family: "Mulish", Sans-serif;
+  fill: #FE0000;
+  color:#FE0000;    
+}
+
+.download-brochure-btn:hover {
+  color: #000; /* Text becomes black */
+  border: 1px solid #df1f26; /* Border zooms out */
+  transform: translateY(-50%) scale(1.1); /* Zoom out effect */
+  font-size: 25px;
+}
+
+/* Section 2: Company Overview */
+.company-overview-section {
+  padding: 60px 0 0;
+  background-color: #FFFFFF; /* Changed to white */
+}
+
+.company-overview-left {
+  background-color: transparent; /* Removed background color */
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.company-overview-right {
+  padding: 30px;
+}
+
+.company-overview-right p {
+  font-size: 30px;
+  font-family: "Mulish", Sans-serif;
+  color: #ee3123;
+  margin: auto;
+}
+
+.company-overview-left p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5em;
+  letter-spacing: 0.2px;
+  color: #54595f;
+}
+
+/* Section 3: Leadership */
+.leadership-section {
+  /* padding: 25px 0; */
+  background-color: #fff;
+}
+
+.leadership-section h2 {
+  font-family: "Mulish", Sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #646569;
+}
+
+.leadership-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.leadership-right {
+  padding: 30px;
+}
+
+.leadership-right h2 {
+  margin-bottom: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #646569;
+}
+
+.leadership-right p {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5em;
+  letter-spacing: 0.2px;
+  color: #54595f;
+  text-align: justify;
+}
+
+/* Section 4 & 5: Board Members & Management Team */
+.board-members-section,
+.management-team-section {
+  padding: 60px 0;
+  background-color: #FFFFFF; /* Changed to white */
+  text-align: center;
+}
+
+.board-members {
+  padding: 60px 0;
+  background-color: #FFFFFF; /* Changed to white */
+  text-align: center;
+}
+
+.board-members .row {
+  margin-top: 60px;
+}
+
+.board-members-section h2,
+.management-team-section h2 {
+  margin-bottom: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  color: #646569;
+}
+
+.team-member {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.team-member .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark shadow */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-member:hover .overlay {
+  opacity: 1;
+}
+
+.team-member .overlay h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  line-height: 1.8em;
+  letter-spacing: 0.2px;
+}
+
+.team-member .overlay p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Section 6: Newsletter Sign-Up */
+.newsletter-section {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+hr {
+  border: 1px rgba(0, 0, 0, 0.25) solid;
+  height: 1px;
+  /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); */
+  margin: 20px auto; /* Adjusted margin-top */
+  width: 100%; /* Full width */
+}
+
+.newsletter-section h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  letter-spacing: 1.5px;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  color: #646569;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+  flex: 0.4;
+  padding: 8px 10px; 
+  font-size: 0.9rem;
+  background-color: #ffffff;
+    border-color: rgba(96, 96, 98, 0.24);
+    border-width: 01px 01px 01px 01px;
+    border-radius: 0px 0px 0px 0px;
+    padding-right: calc(10px / 2);
+    padding-left: calc(10px / 2);
+    margin-bottom: 10px;
+}
+
+.newsletter-form .subscribe-button {
+  background-color: #df1f26; /* Crimson red background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 8px 18px; /* Reduced padding */
+  border-radius: 5px;
+  font-size: 0.9rem; /* Slightly reduced font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  font-family: "Mulish", Sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 0px 0px 0px 0px;
+    padding: 11px 30px 11px 30px;
+}
+
+.newsletter-form .subscribe-button:hover {
+  background-color: transparent; /* Dark blue on hover */
+  border: 1px solid #df1f26; /* Crimson red border */;
+  color: #df1f26; /* Crimson red text */
+}
+
+/* Animations */
+@keyframes flyInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.company-overview-section, .leadership-section, .board-members-section, .management-team-section, .newsletter-section {
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .company-overview-left,
+  .company-overview-right,
+  .leadership-left,
+  .leadership-right {
+    padding: 20px;
+  }
+
+  .leadership-right h2 {
+    font-size: 2rem;
+  }
+
+  .board-members-section h2,
+  .management-team-section h2 {
+    font-size: 2rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form .subscribe-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .company-overview-section .row,
+  .leadership-section .row {
+    flex-direction: column;
+  }
+
+  .company-overview-left,
+  .company-overview-right {
+    margin-bottom: 20px;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+}
