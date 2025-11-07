@@ -255,37 +255,26 @@ hr {
 .newsletter-form input[type="text"],
 .newsletter-form input[type="email"] {
   flex: 0.4;
-  padding: 8px 10px; 
+  padding: 10px;
   font-size: 0.9rem;
   background-color: #ffffff;
-    border-color: rgba(96, 96, 98, 0.24);
-    border-width: 01px 01px 01px 01px;
-    border-radius: 0px 0px 0px 0px;
-    padding-right: calc(10px / 2);
-    padding-left: calc(10px / 2);
-    margin-bottom: 10px;
+  border: 1px solid rgba(96, 96, 98, 0.24);
+  border-radius: 5px;
 }
 
 .newsletter-form .subscribe-button {
   background-color: #df1f26; /* Crimson red background */
   color: #fff; /* White text */
-  border: none;
-  padding: 8px 18px; /* Reduced padding */
+  border: 1px solid #df1f26;
+  padding: 10px 30px;
   border-radius: 5px;
-  font-size: 0.9rem; /* Slightly reduced font size */
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-
+  transition: all 0.3s ease;
   font-family: "Mulish", Sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-radius: 0px 0px 0px 0px;
-    padding: 11px 30px 11px 30px;
 }
 
 .newsletter-form .subscribe-button:hover {
