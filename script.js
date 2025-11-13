@@ -1,16 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
   // --- Hero Section Carousel Logic  ---
   const slides = document.querySelectorAll(".slide");
-  let currentSlide = 0;
+  if (slides.length > 0) {
+    let currentSlide = 0;
 
-  function showNextSlide() {
-    slides[currentSlide].classList.remove("active-slide");
-    currentSlide = (currentSlide + 1) % slides.length;
+    function showNextSlide() {
+      slides[currentSlide].classList.remove("active-slide");
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add("active-slide");
+    }
+
     slides[currentSlide].classList.add("active-slide");
+    setInterval(showNextSlide, 5000);
   }
-
-  slides[currentSlide].classList.add("active-slide");
-  setInterval(showNextSlide, 5000);
 
   // --- Dropdown Menu Logic (FIXED: Mobile Click persistence) ---
   const dropdowns = document.querySelectorAll(".dropdown");
